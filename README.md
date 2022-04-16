@@ -2,7 +2,7 @@
 
 ## Zheng's Web
 
-This project created a web for myself.
+This project created a web for myself. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
 
 ### Home page
 
@@ -16,7 +16,7 @@ The special idea of this web is I try to modify my web through web instead of ch
 
 #### Login
 
-At first I need to login, otherwise I cannot modify this web (Since I obviously don't hope any other people change my website.)
+At first I need to login, otherwise I cannot modify this web (Since I obviously don't hope any other people change my website.) The password will be 123456 if you don't have any security.json to save password. Or you can create one for safety.
 
 <img width="1277" alt="image" src="https://user-images.githubusercontent.com/77183284/163679697-54637091-cdb8-4318-8e31-8215c8de21fe.png">
 
