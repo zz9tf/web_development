@@ -16,6 +16,13 @@ const express = require('express');
 const Message = require('../models/Message');
 const router = express.Router();
 const saltRounds = 10;
+var password = "123456";
+try{
+  const security = require('../public/data/security.json')
+  password = security.password;
+} catch (e){
+  console.log("The file security.json doesn't exist in data! You might want use 123456 as password.\n Or add your own security.json file in data");
+}
 
 // This is an example of middleware
 // where we look at a request and process it!
@@ -38,7 +45,7 @@ router.post('/login',
   async (req,res,next) => {
     try {
       const passphrase = req.body.passphrase
-      if (passphrase == "zZ-5732021823") {
+      if (passphrase == password) {
         let messages = await Message.find({});
         console.log("Have message ", messages.length)
         req.session.next_id = messages.length + 1;

@@ -18,10 +18,15 @@ const Message = require('./models/Message');
 //  Loading JSON datasets
 
 // *********************************************************** //
+var mongodb_URI = 'mongodb://localhost:27017'
+try{
+  const security = require('./public/data/security.json')
+  mongodb_URI = security.remote_connection;
+} catch (e){
+  console.log("The file security.json doesn't exist in data! You might want use your local host to run this web app.\n Or add your own security.json file in data")
+}
 
 const mongoose = require( 'mongoose' );
-// const mongodb_URI = 'mongodb://localhost:27017'
-const mongodb_URI = 'mongodb+srv://103aDatabase:zZ112358@zz9tf.thtan.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 mongoose.connect( mongodb_URI, {useNewUrlParser: true} );
 const db = mongoose.connection;
@@ -116,6 +121,7 @@ app.set("port", port);
 // and now we startup the server listening on that port
 const http = require("http");
 const { reset } = require("nodemon");
+const req = require("express/lib/request");
 const server = http.createServer(app);
 
 server.listen(port);
