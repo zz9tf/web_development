@@ -18,12 +18,16 @@ const Message = require('./models/Message');
 //  Loading JSON datasets
 
 // *********************************************************** //
-var mongodb_URI = 'mongodb://localhost:27017'
-try{
-  const security = require('./public/data/security.json')
-  mongodb_URI = security.remote_connection;
-} catch (e){
-  console.log("The file security.json doesn't exist in data! You might want use your local host to run this web app.\n Or add your own security.json file in data")
+var mongodb_URI = process.env.mongodb_URI;
+if (mongodb_URI == null){
+  try{
+    const security = require('./public/data/security.json')
+    mongodb_URI = security.remote_connection;
+    console.log(mongodb_URI)
+  } catch (e){
+    mongodb_URI = "mongodb://localhost:27017"
+    console.log("The file security.json doesn't exist in data! You might want use your local host to run this web app.\n Or add your own security.json file in data");
+  }
 }
 
 const mongoose = require( 'mongoose' );
