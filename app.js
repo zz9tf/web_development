@@ -128,7 +128,7 @@ const { reset } = require("nodemon");
 const req = require("express/lib/request");
 const server = http.createServer(app);
 
-server.listen(port);
+server.listen(process.env.PORT || port);
 
 function onListening() {
   var addr = server.address();
