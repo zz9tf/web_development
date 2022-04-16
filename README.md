@@ -39,3 +39,24 @@ Through submit, I can add more message on my website. And I also can sort these 
 <img width="985" alt="image" src="https://user-images.githubusercontent.com/77183284/163680001-2661fd18-3c3b-4eda-a7c2-883e4806c5df.png">
 
 # how to install and run your app locally
+
+Just download this project, and use the following code to run it.
+
+Chack your version first.
+'''
+node --version
+npm --version
+'''
+
+If it's workable, then
+
+'''
+npm install
+npm install -g nodemon
+'''
+
+Finally, the following code will allow you run it.
+
+'''
+nodemon
+'''
