@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="column" style="width: 20%;">
+        <img src="images/myself.jpg" 
+            style=
+                "border-radius:15%;
+                margin: 5px;
+                display: block;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                width:100%;">
+        
+        <div class="row" style="margin: 10px;">
+            <h3><bold>Zheng Zheng</bold></h3>
+            <p>MS student in Computer Science</p>
+        </div>
+        
+        <div class="row" style="margin: 20px;">
+            <i class="far fa-building" style='font-size:24px; margin-bottom: 20px;'>
+                <a href="https://www.google.com/maps/place/116+Villa+St,+Waltham,+MA+02453/@42.3721247,-71.2598888,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3833bfe2b918d:0x7a9360efcd686713!8m2!3d42.3721208!4d-71.2577001">
+                 Waltham, MA</a>
+            </i><br>
+
+            <i class="fa fa-linkedin" style='font-size:24px; margin-bottom: 20px;'>
+                <a href="www.linkedin.com/in/zheng-zheng-082420217">
+                    Linkedin</a>
+            </i>
+
+            <i class="fa fa-github" style="font-size:24px; margin-bottom: 20px;">
+                <a href="https://github.com/zz9tf">
+                    Github</a>
+            </i>
+            <br>
+            
+        </div>
+        
+    </div>
+    <div class="column" style="width: 80%;">
+        <% if (loggedIn) {%>
+            <!-- This is the input box -->
+            <div class="row" style="margin: 20px; width: auto;">
+                <h2>Message</h2>
+                <form method="post" action="/post_message">
+                    <input name="topic"
+                        type="String"
+                        class="form-control" 
+                        placeholder="Topic">
+                    <textarea class="form-control my-2" 
+                            type="String"
+                            name="message" 
+                            placeholder="context..." 
+                            rows="3" required></textarea>
+                    <input type="submit" class="btn btn-primary">
+                </form>
+            </div>
+        <% } %>
+        <div class="row" style="margin: 20px; width: auto;">
+            <% for (tpc of Object.keys(messages)){%>
+                <h2><%=tpc.substring(3)%></h2>
+                <hr>
+                <% for (msg of messages[tpc]){%>
+                    <p><%=msg.message.substring(3)%></p>
+                <% }%>
+            <% }%>
+        </div>
+    </div>
+</div>

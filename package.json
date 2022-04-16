@@ -1,0 +1,31 @@
+{
+  "name": "cs103a-cpa02",
+  "version": "1.0.0",
+  "description": "#### what your app does and how to use it (with screenshots)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zz9tf/cs103a-cpa02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zz9tf/cs103a-cpa02/issues"
+  },
+  "homepage": "https://github.com/zz9tf/cs103a-cpa02#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.3.0",
+    "nodemon": "^2.0.15"
+  }
+}
