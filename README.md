@@ -4,6 +4,10 @@
 
 This project created a web for myself. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
 
+### Introductory video link
+
+Link: 
+
 ### Home page
 
 <img width="1279" alt="image" src="https://user-images.githubusercontent.com/77183284/163679580-94a7319d-eaee-4064-95e2-f5ae37b96a63.png">
