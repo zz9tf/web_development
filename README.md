@@ -4,6 +4,8 @@
 
 This project created a web for myself. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
 
+web link: https://fast-citadel-03267.herokuapp.com/
+
 ### Introductory video link
 
 Link: https://brandeis.zoom.us/rec/share/H9jHghKQXc3jScmApG8iwL2BJmJf0ffycPlpBDfqc0k1r2ZuKN9WwvYjgPkyVC_S.O6BkatW2x61opa2k?startTime=1651078197000
