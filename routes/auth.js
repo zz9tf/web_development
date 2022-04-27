@@ -16,13 +16,16 @@ const express = require('express');
 const Message = require('../models/Message');
 const router = express.Router();
 const saltRounds = 10;
-var password = "123456";
-try{
-  const security = require('../public/data/security.json')
-  password = security.password;
-} catch (e){
-  console.log("The file security.json doesn't exist in data! You might want use 123456 as password.\n Or add your own security.json file in data");
+var password = process.env.password;
+if (password == null){
+  try{
+    const security = require('../public/data/security.json')
+    password = security.password;
+  } catch (e){
+    console.log("The file security.json doesn't exist in data! You might want use 123456 as password.\n Or add your own security.json file in data");
+  }
 }
+
 
 // This is an example of middleware
 // where we look at a request and process it!
