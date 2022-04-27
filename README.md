@@ -6,7 +6,7 @@ This project created a web for myself. If you want to run this project, you need
 
 ### Introductory video link
 
-Link: 
+Link: https://brandeis.zoom.us/rec/share/H9jHghKQXc3jScmApG8iwL2BJmJf0ffycPlpBDfqc0k1r2ZuKN9WwvYjgPkyVC_S.O6BkatW2x61opa2k?startTime=1651078197000
 
 ### Home page
 
