@@ -2,7 +2,7 @@
 
 ## Zheng's Web
 
-This project created a web for myself. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
+This project created a website as a person website demo. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
 
 web link: https://fast-citadel-03267.herokuapp.com/
 
