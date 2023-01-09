@@ -1,6 +1,6 @@
 # what your app does and how to use it (with screenshots)
 
-## Zheng's Web
+## Portfolio demo
 
 This project created as a person website demo. If you want to run this project, you need to run this locally or create your own mongodb_URI to run it.
 
